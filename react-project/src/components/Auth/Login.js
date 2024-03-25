@@ -43,6 +43,7 @@ function Login() {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="login-input" /> {/* Apply 'login-input' class */}
         </div>
         <button type="submit" className="login-button">Login</button> {/* Apply 'login-button' class */}
+        <Link to="/signup"><button style={{ marginTop: "15px"}}>Signup</button></Link>
       </form>
       {error && <div className="error-message">{error}</div>} {/* Apply 'error-message' class */}
     </div>
